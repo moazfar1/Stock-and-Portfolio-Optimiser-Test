@@ -1,0 +1,40 @@
+# Libraries for the stock analysis app. Install with:  pip install -r requirements.txt
+# Versions are minimums (">="): pip picks the newest builds that work with your Python.
+# Python 3.10 or newer is required.
+
+# --- web interface and charts
+streamlit>=1.40
+streamlit-autorefresh>=1.0.1      # optional feature: automatic news refresh
+plotly>=5.20
+jinja2>=3.1                       # colours the ratio table
+
+# --- data and maths
+pandas>=2.2
+numpy>=1.26
+scipy>=1.11
+scikit-learn>=1.3                 # Ledoit-Wolf covariance shrinkage
+openpyxl>=3.1                     # Excel export
+
+# --- market data and news (all free, no key needed)
+yfinance>=0.2.54
+feedparser>=6.0.11
+requests>=2.31
+python-dotenv>=1.0
+
+# --- sentiment analysis
+vaderSentiment>=3.3.2
+
+# --- portfolio optimisation
+# If this line fails to install on your computer, delete it. The app then uses SciPy instead.
+PyPortfolioOpt>=1.5.5
+
+# --- optional: Reddit posts (also needs a free Reddit API key, see README)
+praw>=7.7
+
+# --- tests
+pytest>=8.0
+
+# --- optional: FinBERT, a more accurate finance sentiment model (large download, about 1 GB).
+# Remove the "#" at the start of these two lines if you want it, then re-run pip install.
+# transformers>=4.40
+# torch>=2.2

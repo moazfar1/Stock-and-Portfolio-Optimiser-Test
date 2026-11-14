@@ -1,0 +1,9 @@
+# secrets and local files: never commit these
+.env
+.streamlit/secrets.toml
+venv/
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+stock_app.log*
